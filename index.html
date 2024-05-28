@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="main.css"/>
+	<title>Кошик покупок</title>
+</head>
+<body>
+<form class="left column">
+	<header class="search-panel">
+		<label>
+			<input class="name-input" type="text" placeholder="Назва товару"/>
+		</label>
+		<button class="new-button" data-tooltip="Додати товар">Додати</button>
+	</header>
+
+	<section class="product">
+		<div class="product-line">
+			<span class="product-name crossed" contenteditable="true">Помідори</span>
+		</div>
+		<div class="quantity-line">
+			<span class="counter">2</span>
+		</div>
+		<div class="condition-line">
+			<button class="buy-button" data-tooltip="Купити">Не куплено</button>
+		</div>
+	</section>
+
+	<section class="product">
+		<div class="product-line">
+			<span class="product-name" contenteditable="true">Печиво</span>
+		</div>
+		<div class="quantity-line">
+			<button class="remove-button" data-tooltip="Прибрати">-</button>
+			<span class="counter">2</span>
+			<button class="add-button" data-tooltip="Додати">+</button>
+		</div>
+		<div class="condition-line">
+			<button class="buy-button" data-tooltip="Не купляти">Куплено</button>
+			<button class="delete-button" data-tooltip="Видалити">x</button>
+		</div>
+	</section>
+
+	<section class="product">
+		<div class="product-line">
+			<span class="product-name" contenteditable="true">Сир</span>
+		</div>
+		<div class="quantity-line">
+			<button class="remove-button disabled" data-tooltip="Прибрати">-</button>
+			<span class="counter">1</span>
+			<button class="add-button" data-tooltip="Додати">+</button>
+		</div>
+		<div class="condition-line">
+			<button class="buy-button" data-tooltip="Не купляти">Куплено</button>
+			<button class="delete-button" data-tooltip="Видалити">x</button>
+		</div>
+	</section>
+</form>
+
+<aside class="right column">
+	<span class="row bold">Залишилося</span>
+	<section class="row">
+		<label class="item">
+			<span class="item-name">Печиво</span>
+			<span class="amount">2</span>
+		</label>
+		<label class="item">
+			<span class="item-name">Сир</span>
+			<span class="amount">1</span>
+		</label>
+	</section>
+	<span class = "row bold">Куплено</span>
+	<section class="row">
+		<label class="item">
+			<span class="item-name crossed">Помідори</span>
+			<span class="amount">2</span>
+		</label>
+	</section>
+</aside>
+
+<footer class="badge">
+	<section class="badge-head">
+		<span class="badge-text">Buy List</span>
+	</section>
+	<section class="badge-body">
+		<span >Created by:</span>
+		<span >Diana Tsisaruk</span>
+	</section>
+</footer>
+
+</body>
+</html>
+
